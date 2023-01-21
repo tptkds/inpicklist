@@ -12,10 +12,10 @@
 
         methods: {
             instagramAuth: function() {
-                axios.get('https://api.instagram.com/oauth/authorize', {
+                axios.get('/oauth/authorize', {
                     params: {
                         client_id: '699014145213917',
-                        redirect_uri: '/inpicklist/',
+                        redirect_uri: 'https://tptkds.github.io/inpicklist/',
                         response_type: 'code',
                         scope: 'user_profile'
                     }
