@@ -13,6 +13,9 @@
         methods: {
             instagramAuth: function() {
                 axios.get('/oauth/authorize', {
+                    headers: {
+                        'cors-proxy-url': 'https://tptkds.github.io/'
+                    },
                     params: {
                         client_id: '699014145213917',
                         redirect_uri: 'https://tptkds.github.io/inpicklist/',
