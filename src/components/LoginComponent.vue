@@ -14,7 +14,7 @@
             instagramAuth: function() {
                 axios.get('/oauth/authorize', {
                     headers: {
-                        'cors-proxy-url': 'https://tptkds.github.io/'
+                        'Access-Control-Allow-Origin': '*'
                     },
                     params: {
                         client_id: '699014145213917',
